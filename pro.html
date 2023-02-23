@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>BRIGHT WORLD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="pro.css">
+    <link rel="stylesheet" href="oursolutions.css">
+    <link rel="stylesheet" href="navfooter.css">
+    <script src="https://kit.fontawesome.com/a6d72ac1ef.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+ 
+<body>
+  <div class="main-navbar shadow-sm">
+    <div class="top-navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 my-auto d-none d-sm-none d-md-block d-lg-block">
+                    <a class="navbar-brand" href="#"><img src="images/brightworld.png" alt="BRIGHT WORLD" width="130px" height="60px"></a>
+                </div>
+                <div class="col-md-5 my-auto">
+                    <form role="search">
+                        <div class="input-group">
+                            <input type="search" placeholder="Search your product" class="form-control" />
+                            <button class="btn bg-white" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 my-auto">
+                    <ul class="nav justify-content-end">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-shopping-cart"></i>Cart <span>(</span><span id="bd">0</span><span>)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-heart"></i> Wishlist<span>(</span><span id="bd">0</span><span>)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-user"></i> Username 
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-list"></i> My Orders</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-heart"></i> My Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-shopping-cart"></i> My Cart</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </div>
+ 
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#">
+            <span style="color: orange;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">BRIGHT</span>
+            <br> <span>WORLD</span> 
+        </a> -->
+        <a class="navbar-brand d-block d-sm-block d-md-none d-lg-none" href="#"><img src="images/brightworld.png" alt="BRIGHT WORLD" width="130px" height="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catagories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#products">INDOOR LIGHTS</a></li>
+                  <li><a class="dropdown-item" href="#products">BATH & VANITY</a></li>
+                  <li><a class="dropdown-item" href="#products">OUTDOOR LIGHTS</a></li>
+                  <li><a class="dropdown-item" href="#products">WALL LIGHTS</a></li>
+                  <li><a class="dropdown-item" href="#products">KITCHEN LIGHTS</a></li>
+                  <li><a class="dropdown-item" href="#products">SOLAR LIGHTS</a></li>
+                  <li><a class="dropdown-item" href="#products">TABLE LAMP</a></li>
+                 
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">OTHER</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">ContactUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer"> AboutUs</a>
+              </li>
+            </ul>
+            
+           
+        </div>
+      </div>
+      </nav>
+     
+      <script>
+
+        $(document).ready(function(){
+            $(".cart-btn").click(function(){
+                var i;
+                i=$("#bd").text();
+                i=Number(i)+1;
+                $("#bd").text(i);
+            })
+            $(".fas fa-heart").click(function(){
+                var i;
+                i=$("#bd").text();
+                i=Number(i)+1;
+                $("#bd").text(i);
+            })
+        })
+      </script>
+       
+        
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          
+           
+          
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active" >
+              
+              <img src="images/1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <div class="left">
+                <h1><img src="images/brightworld.png" alt="" height="80px"></h1>
+      <p style="background-color: rgba(0, 0, 0, 0.43);">Welcome to Bright World LED Light Shop! We are glad you have found us and hope you will take some time to explore our website. Our goal is to provide high-quality LED lighting solutions that are energy-efficient, cost-effective, and environmentally friendly. We offer a wide range of products, including LED bulbs, LED panels, LED strips, LED tubes, LED floodlights, and LED spotlights, to meet the diverse needs of our customers.</p>
+      </div>
+    </div>
+              <div id="login">
+                <div class="login-box">
+                  <h2>Login</h2>
+                  <form>
+                    <div class="user-box">
+                      <input type="text" placeholder="user name" required>
+                      
+                    </div>
+                    <div class="user-box">
+                      <input type="password" placeholder="password" required >
+                      
+                    </div>
+                    <a href="#" id="submit">
+                     
+                      Submit
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/3.jpeg" class="d-block w-100" alt="..." >
+              <div class="carousel-caption d-none d-md-block">
+                
+                  <div class="left">
+                    <h1>LED Stadium Lights</h1>
+                    <p>LED stadium lights are a cost-effective and energy-efficient lighting solution for sports venues. They provide bright, uniform illumination for athletes and spectators, and their long lifespan and low maintenance requirements make them a popular choice for stadiums around the world.</p>
+                  </div>
+                
+               </div>
+              <div id="login">
+                <div class="login-box">
+                  <h2>Login</h2>
+                  <form>
+                    <div class="user-box">
+                      <input type="text" placeholder="user name" required>
+                      
+                    </div>
+                    <div class="user-box">
+                      <input type="password" placeholder="password" required >
+                      
+                    </div>
+                    <a href="#" id="submit">
+                     
+                      Submit
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/4 1.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h1 style="color: black; background-color: rgba(255, 235, 205, 0.405);">Next genration Led Lights In pakistan</h1>
+                <p style="background-color: rgba(0, 0, 0, 0.468);">Upgrade to energy-efficient LED bulb lights and save on your energy bill while also reducing your carbon footprint. These long-lasting bulbs provide bright, clear light and are available in a variety of shapes and sizes to fit your needs. Plus, they have a much longer lifespan than traditional incandescent bulbs, so you won't have to worry about constantly replacing them. Make the switch to LED bulb lights today!</p>
+              </div>
+              <div id="login">
+                <div class="login-box">
+                  <h2>Login</h2>
+                  <form>
+                    <div class="user-box">
+                      <input type="text" placeholder="user name" required>
+                      
+                    </div>
+                    <div class="user-box">
+                      <input type="password" placeholder="password" required >
+                      
+                    </div>
+                    <a href="#" id="submit">
+                     
+                      Submit
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span> -->
+          </button>
+        </div> 
+   
+
+<script>
+
+</script>
+<h1 id="solution">Our Lighting Solutions</h1>
+<div class="index-post">
+  <div class="container">
+    <div class="image-container">
+      <img src="images/led-street-lights.jpg" alt="">
+    </div>
+    <div class="item-container">
+      <h2 class="title">Street Lighting</h2>
+      <span class="descript">We provide street lights for trusted partner of most technically demanding projects.</span>
+    </div>
+    <div class="btn-container">
+      <a href="contact.html" class="button">Read More</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="image-container">
+      <img src="images/led-downlights-1024x328.jpg" alt="">
+    </div>
+    <div class="item-container">
+      <h2 class="title">Down Lights</h2>
+      <span class="descript">LED Downlights are designed and built using leading and the best components.</span>
+    </div>
+    <div class="btn-container">
+      <a href="contact.html" class="button">Read More</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="image-container">
+      <img src="images/HighBay_banner.jpg" alt="">
+    </div>
+    <div class="item-container">
+      <h2 class="title">Highbay Lights</h2>
+      <span class="descript">Our collection of high bay lighting is energy-efficient for commercial facilities.</span>
+    </div>
+    <div class="btn-container">
+      <a href="contact.html" class="button">Read More</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="image-container">
+      <img src="images/stadium.jpg" alt="">
+    </div>
+    <div class="item-container">
+      <h2 class="title">Stadium Lights</h2>
+      <span class="descript">We provide high power Led Stadium Lights with advanced optical lenses.</span>
+    </div>
+    <div class="btn-container">
+      <a href="#" class="button">Read More</a>
+    </div>
+  </div>
+
+</div>
+
+
+
+<div class="header-product">
+  
+  <div class="info">
+    <h1 class="title"> LED Foldable Desk Lamp</h1>
+    <p class="description">LED-685 SMD LED Foldable Desk Lamp, built-in battery LED table lamp, energy saving and no flash, strong weak light selectable.</p>
+  </div>
+  <img src="images/pngwing.com (10).png" alt="LED light" class="product-image">
+</div>
+<script>
+  
+</script>
+
+<section class="products" id="products">
+
+  <h1 class="heading"> Latest <span>Products</span> </h1>
+
+  <div class="box-container">
+
+      <div class="box">
+          
+          <div class="image">
+              <img src="images/200W-Flood-1-300x300.jpg" alt="">
+              <span class="discount">-10%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h5>LED SOLAR FLOOD LIGHT</h5>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          
+          <div class="image">
+              <img src="images/BED LIGHT BALL LAMP.png" alt="">
+              <span class="discount">-15%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h5>BED LIGHT BALL LAMP</h5>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          
+          <div class="image">
+              <img src="images/9W Smart Wifi Bulb Dimming Light Bulb Voice Control Smart Light RGB Bulb 1.png" alt="">
+              <span class="discount">-5%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h3>9W Smart Wifi Bulb</h3>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          
+          <div class="image">
+              <img src="images/Deformable-Lamp-1-300x300.jpg" alt="">
+              <span class="discount">-20%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h5>Deformable-Lamp</h5>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+        
+          <div class="image">
+              <img src="images/diod graphy.png" alt="">
+              <span class="discount">-17%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h5>Diod graphy</h5>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          
+          <div class="image">
+              <img src="images/led lamp.png" alt="">
+              <span class="discount">-3%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h5>LED LAMP</h5>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          
+          <div class="image">
+              <img src="images/spot light.png" alt="">
+              <span class="discount">-18%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h5>SPOT LIGHT</h5>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+         
+          <div class="image">
+              <img src="images/tracklight.png" alt="">
+              <span class="discount">-10%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h5>TRACK LIGHT</h5>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+      <div class="box">
+          
+          <div class="image">
+              <img src="images/stage light.png" alt="">
+              <span class="discount">-5%</span>
+              <div class="icons">
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="cart-btn">add to cart</a>
+                  <a href="#" class="fas fa-share"></a>
+              </div>
+          </div>
+          <div class="content">
+              <h5>STAGE LIGHT</h5>
+              <div class="price"> $12.99 <span>$15.99</span> </div>
+          </div>
+      </div>
+
+  </div>
+
+</section>
+
+<!-- prodcuts section ends -->
+<footer class="site-footer" id="footer">
+  <div class="footer-container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">Our team of lighting experts has extensive knowledge and experience in the field, and they are always ready to assist you in finding the best LED lights to suit your specific needs. We are committed to providing our customers with top-notch customer service and the highest level of satisfaction.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="">Indoor lights</a></li>
+          <li><a href="">Outdoor lights</a></li>
+          <li><a href="">kitchen lights</a></li>
+          <li><a href="">Decoration lights</a></li>
+          <li><a href="">Wall lights</a></li>
+          <li><a href="">Solar lights</a></li>
+        </ul>
+      </div>
+      <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Contribute</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="footer-container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright  2023 All Rights Reserved by 
+     <a href="pro.html">BRIGHT WORLD</a>.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
